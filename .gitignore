@@ -1,0 +1,27 @@
+# ROS 2 build artifacts
+build/
+install/
+log/
+
+# ROS 2 workspace build artifacts
+ws_limo_humble/build/
+ws_limo_humble/install/
+ws_limo_humble/log/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# SLAM generated data
+*.posegraph
+*.data
+.git_backup/
+frames_*.gv
+frames_*.pdf
+
+# Git backup directories
+.git_backup
+
+#TF frame snapshots
+frames_*.gv
+frames_*.pdf
