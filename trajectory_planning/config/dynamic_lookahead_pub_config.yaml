@@ -1,0 +1,45 @@
+dynamic_lookahead_pub_node:
+  ros__parameters:
+    # Lookahead distance adapts based on velocity
+    lookahead_distance_min: 1.7      # [m] minimum lookahead distance
+    lookahead_distance_max: 2.5      # [m] maximum lookahead distance
+    velocity_scale: 0.6              # scaling factor (lookahead = v * scale)
+    use_lateral_deviation_based_lookahead: true
+    lookahead_velocity_weight: 0.5
+    lookahead_lateral_deviation_weight: 0.5
+    max_lateral_deviation: 1.0       # [m] lateral deviation that maps to maximum lookahead
+    use_lateral_error_speed_reducer: true
+    lateral_error_speed_reducer_gain: 2.0
+
+    # Topics
+    lookahead_marker_topic: "/lookahead_goal"
+    odom_topic: "/odom"
+    # Path CSV
+    csv_path_topic: "/global_path"
+    reverse: False 
+
+    # Frames
+    target_frame: "map"
+    source_frame: "base_link"
+
+    # Timer update frequency
+    timer_frequency: 30.0  # Hz
+
+    # Marker visualization parameters
+    marker.scale_x: 0.3
+    marker.scale_y: 0.3
+    marker.scale_z: 0.3
+    marker.color_r: 1.0
+    marker.color_g: 0.0
+    marker.color_b: 0.0
+    marker.color_a: 1.0
+    marker.z_offset: 0.1
+
+    # Circle visualization parameters
+    circle.line_thickness: 0.03
+    circle.color_r: 0.0
+    circle.color_g: 1.0
+    circle.color_b: 0.0
+    circle.color_a: 1.0
+    circle.resolution: 60
+    circle.z_offset: 0.05

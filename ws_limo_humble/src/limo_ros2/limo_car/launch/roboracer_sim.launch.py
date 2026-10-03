@@ -72,11 +72,11 @@ def generate_launch_description():
 
     return LaunchDescription([
         DeclareLaunchArgument("world", default_value=default_world),
-        DeclareLaunchArgument("spawn_x", default_value="0.0"),
+        DeclareLaunchArgument("spawn_x", default_value="0.0766"),
         # One 1 m grid cell above the green +Y start line, facing +X.
-        DeclareLaunchArgument("spawn_y", default_value="1.0"),
-        DeclareLaunchArgument("spawn_z", default_value="0.15"),
-        DeclareLaunchArgument("spawn_yaw", default_value="0.0"),
+        DeclareLaunchArgument("spawn_y", default_value="0.7025"),
+        DeclareLaunchArgument("spawn_z", default_value="0.05"),
+        DeclareLaunchArgument("spawn_yaw", default_value="1.2779"),
         DeclareLaunchArgument("rviz", default_value="true"),
         robot_description,
         gazebo,
